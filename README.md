@@ -14,7 +14,7 @@ Refer to Sass' [documentation](http://sass-lang.com/docs/yardoc/file.SASS_REFERE
 
 ##Screenshot
 
-![KomodoLovers Screenie](raw/master/screenie.png)
+![KomodoLovers Screenie](KomodoLovers/raw/master/screenie.png)
 
 ##Legal
 
