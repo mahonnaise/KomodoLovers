@@ -1,0 +1,52 @@
+// A Komodo-inspired theme for http://code.google.com/p/google-code-prettify/
+// It's based on code-prettify's default theme.
+//
+// Komodo is a registered trademark of ActiveState.
+
+// provides an approximated `ch` unit fallback for browsers which don't support it yet
+@mixin chLength ($property, $num) {
+	$characterWidth: 0.68em; // rule of thumb value
+	#{$property}: $num * $characterWidth;
+	#{$property}: #{$num}ch;
+}
+
+.prettyprint {
+	@include chLength(padding, 1);
+	margin: 1em 0;
+
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+
+	overflow: auto;
+
+	-webkit-tab-size: 4;
+	-moz-tab-size: 4;
+	-ms-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	.pln {color: #000;} // plain text
+	.str {color: #23238e;} // string content
+	.kwd {color: #871f78;} // a keyword
+	.com {color: #746b69;} // a comment
+	.typ {color: #000;} // a type name
+	.lit {color: #8b0000;} // a literal value
+	.pun, .opn, .clo {color: #781f87;} // punctuation, lisp open bracket, lisp close bracket
+	.tag {color: #0032ff;} // a markup tag name
+	.atn {color: #871f78;} // a markup attribute name
+	.atv {color: #23238e;} // a markup attribute value
+	.dec, .var {color: #000;} // ? a declaration; a variable name
+	.fun {color: #000;} // ? a function name
+
+	// add the "linenums" class to your `pre` tag to enable line numbering
+	// the selector below matches the generated `ul.linenums` element, not `pre.linenums`
+	.linenums {
+		$numberOfDigits: 3; // make room for X line number digits
+		margin: 0;
+		@include chLength(margin-left, $numberOfDigits + 2); // 2 = space for ". "
+		& > li:hover {
+			background: #f5f5f5; // in Komodo, this is the background color of the active line
+		}
+	}
+}
