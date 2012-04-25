@@ -1,6 +1,6 @@
 #KomodoLovers
 
-*KomodoLovers* is Komodo-inspired theme for [code-prettify](http://code.google.com/p/google-code-prettify/).
+*KomodoLovers* is [Komodo](http://www.activestate.com/komodo-ide)-inspired theme for [code-prettify](http://code.google.com/p/google-code-prettify/).
 
 Structure, selectors, and comments were borrowed from code-prettify's default theme.
 
@@ -18,4 +18,4 @@ Refer to Sass' [documentation](http://sass-lang.com/docs/yardoc/file.SASS_REFERE
 
 ##Legal
 
-Komodo is a registered trademark of ActiveState.
+Komodo is a registered trademark of [ActiveState](http://www.activestate.com/).
